@@ -15,25 +15,34 @@ Useful for benchmarking, campaign optimization, and BI-ready reporting
 
 ## SQL Modules / SQL-модулі
 
-BI_ready_data.sql  
+0_ready_data.sql  
+Extracts GA4 events for BI dashboards: session ID, country, device, traffic source  
 Витягує події GA4 для BI-звітів: сесія, країна, пристрій, джерело трафіку
 
 Conversion_by_channel.sql  
+Calculates funnel conversion rates by date and traffic channel  
 Розраховує конверсії по воронці в розрізі дат і каналів трафіку
 
 Landing_page_comparison.sql  
+Compares conversion rates across landing pages  
 Порівнює конверсії між різними посадковими сторінками
 
 Engagement_correlation.sql  
+Measures correlation between user engagement and purchases  
 Вимірює кореляцію між залученістю користувачів і покупками
 
 ## SQL Environment / Середовище виконання SQL
+Google BigQuery — on GA4 public sample datasets  
+PostgreSQL — for local testing and BI-ready table preparation  
 Google BigQuery — на публічних даних GA4  
 PostgreSQL — для локального тестування та підготовки таблиць
 
-Прямі посилання на запити BigQuery не надаються  
+Direct links to BigQuery queries are not available  
+Прямі посилання на запити BigQuery не надаються
+
+All SQL logic is available in the sql/ folder for reproducibility  
 Уся SQL-логіка доступна у папці sql/ для відтворення
 
 ## Outcome / Результат
-Створено модульну SQL-структуру для аналізу ефективності реклами та поведінки користувачів  
-Аналітика дозволяє маркетинговим командам оцінювати кампанії та оптимізувати лендинги
+Delivered a modular SQL framework for analyzing ad performance and user engagement  
+Створено модульну SQL-структуру для аналізу ефективності реклами та поведінки користувачів
